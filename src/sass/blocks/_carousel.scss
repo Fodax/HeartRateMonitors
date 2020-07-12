@@ -1,0 +1,85 @@
+.carousel {
+    padding: 108px 0;
+
+    &__inner {
+        position: relative;
+        width: 750px;
+        margin: 0 auto;
+
+        img {
+            outline: none;
+            border: none;
+        }
+
+        .slick-prev, .slick-next {
+            border: none;
+            outline: none;
+            background-color: #fff;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-40px) translateY(-50%);
+
+            img {
+                width: 35px;
+            }
+        }
+
+        .slick-prev {
+            left: -105px;
+        }
+
+        .slick-next {
+            right: -105px;
+        }
+
+        .slick-dots {
+            margin: 0 auto;
+            width: 200px;
+            display: flex;
+            justify-content: space-between;
+
+            li {
+                list-style: none;
+                position: relative;
+
+                button {
+                    font-size: 0;
+                    line-height: 0;
+                    width: 20px;
+                    height: 20px;
+                    padding: 5px;
+                    cursor: pointer;
+                    color: transparent;
+                    border: 0;
+                    outline: none;
+                    background: transparent;
+
+                    &::before {
+                        font-size: 60px;
+                        line-height: 20px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 20px;
+                        height: 20px;
+                        content: '•';
+                        text-align: center;
+                        opacity: .25;
+                        color: black;
+                        -webkit-font-smoothing: antialiased;
+                        -moz-osx-font-smoothing: grayscale;
+                    }
+                }
+            }
+
+            .slick-active {
+                button {
+                    &::before {
+                        opacity: .75;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
