@@ -1,85 +1,82 @@
 .carousel {
-    padding: 108px 0;
+	padding: 108px 0 55px 0;
 
-    &__inner {
-        position: relative;
-        width: 750px;
-        margin: 0 auto;
+	.prev-btn, .next-btn {
+		border: none;
+		outline: none;
+		background-color: transparent;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-38px) translateY(-50%);
 
-        img {
-            outline: none;
-            border: none;
-        }
+		img {
+			width: 37px;
+		}
+	}
 
-        .slick-prev, .slick-next {
-            border: none;
-            outline: none;
-            background-color: #fff;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-40px) translateY(-50%);
+	.prev-btn {
+		left: -12px;
+	}
 
-            img {
-                width: 35px;
-            }
-        }
+	.next-btn {
+		right: -12px;
+	}
 
-        .slick-prev {
-            left: -105px;
-        }
+	.tns-nav {
+		display: flex;
+		width: 150px;
+		margin: 0 auto;
+		justify-content: space-between;
 
-        .slick-next {
-            right: -105px;
-        }
+		.tns-nav-active {
+			&::before {
+				opacity: .75;
+				color: black;
+			}
+		}
 
-        .slick-dots {
-            margin: 0 auto;
-            width: 200px;
-            display: flex;
-            justify-content: space-between;
+		button {
+			position: relative;
+			font-size: 0;
+			line-height: 0;
+			width: 30px;
+			height: 30px;
+			padding: 5px;
+			cursor: pointer;
+			color: transparent;
+			border: 0;
+			outline: none;
+			background: transparent;
 
-            li {
-                list-style: none;
-                position: relative;
+			&::before {
+				font-size: 60px;
+				line-height: 26px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translateY(-50%) translateX(-50%);
+				width: 30px;
+				height: 30px;
+				content: '•';
+				text-align: center;
+				opacity: .25;
+				color: black;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
+		}
+	}
 
-                button {
-                    font-size: 0;
-                    line-height: 0;
-                    width: 20px;
-                    height: 20px;
-                    padding: 5px;
-                    cursor: pointer;
-                    color: transparent;
-                    border: 0;
-                    outline: none;
-                    background: transparent;
+	&__inner {
+		position: relative;
+		width: 750px;
+		margin: 0 auto;
 
-                    &::before {
-                        font-size: 60px;
-                        line-height: 20px;
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 20px;
-                        height: 20px;
-                        content: '•';
-                        text-align: center;
-                        opacity: .25;
-                        color: black;
-                        -webkit-font-smoothing: antialiased;
-                        -moz-osx-font-smoothing: grayscale;
-                    }
-                }
-            }
-
-            .slick-active {
-                button {
-                    &::before {
-                        opacity: .75;
-                        color: black;
-                    }
-                }
-            }
-        }
-    }
+		img {
+			display: block;
+			margin: 0 auto;
+			outline: none;
+			border: none;
+		}
+	}
 }

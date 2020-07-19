@@ -1,5 +1,4 @@
 .button {
-	margin-top: 8px;
 	width: 150px;
 	height: 30px;
 	border-radius: 5px;
@@ -10,6 +9,10 @@
 	font-size: 12px;
 	font-weight: 500;
 	text-transform: uppercase;
+
+	&_header {
+		margin-top: 8px;
+	}
 
 	&_main {
 		margin-top: 67px;
@@ -23,5 +26,12 @@
 		height: 55px;
 		width: 100%;
         font-size: 16px;
+	}
+
+	&_mini {
+		margin-top: 0;
+		width: 131px;
+		height: 40px;
+		font-size: 14px;
 	}
 }
