@@ -1,0 +1,21 @@
+@keyframes heartbeat {
+	from {
+		transform: scale(1);
+	}
+
+	40% {
+		transform: scale(1.4);
+	}
+
+	70% {
+		transform: scale(1);
+	}
+
+	85% {
+		transform: scale(1.2);
+	}
+
+	to {
+		transform: scale(1);
+	}
+}

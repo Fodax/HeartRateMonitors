@@ -1,5 +1,13 @@
+//libs
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/fonts';
+@import 'libs/tiny-slider';
+@import 'libs/slick';
+@import 'libs/animate.min';
+
+//base
 @import 'base/variables';
-@import 'base/media';
+@import 'base/animations';
 
 * {
 	font-family: 'Museo Sans Cyrl', sans-serif;
@@ -11,6 +19,7 @@
 	margin: 0 auto;
 }
 
+//blocks
 @import 'blocks/title';
 @import 'blocks/promo';
 @import 'blocks/header';
@@ -23,3 +32,6 @@
 @import 'blocks/reviews';
 @import 'blocks/footer';
 @import 'blocks/modal';
+@import 'blocks/pageup';
+
+@import 'base/media';

@@ -1,26 +1,26 @@
 .feed-form {
-    margin-top: 36px;
-    display: flex;
-    flex-direction: column;
-    width: 300px;
+	margin-top: 36px;
+	display: flex;
+	flex-direction: column;
+	width: 300px;
 
-    input {
-        padding: 0 20px;
-        margin-bottom: 15px;
-        height: 50px;
-        border-radius: 5.0px;
-        border: none;
-        outline: none;
-        font-size: 14px;
-        font-weight: 300;
-        color: #4b4b4b;
+	input {
+		padding: 0 20px;
+		margin-bottom: 15px;
+		height: 50px;
+		border-radius: 5.0px;
+		border: none;
+		outline: none;
+		font-size: 14px;
+		font-weight: 300;
+		color: #4b4b4b;
 
-        &[type=number]::-webkit-inner-spin-button {
-            display: none;
-        }
-    }
+		&[type=number]::-webkit-inner-spin-button {
+			display: none;
+		}
+	}
 
-    &_mt25 {
-        margin-top: 25px;
-    }
+	&_mt25 {
+		margin-top: 25px;
+	}
 }

@@ -4,12 +4,6 @@
 /node_modules
 /bootstrap-4.4.1-dist
 
-# testing
-/coverage
-
-# production
-/build
-
 # misc
 .DS_Store
 .env.local

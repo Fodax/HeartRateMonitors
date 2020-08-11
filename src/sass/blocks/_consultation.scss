@@ -1,25 +1,25 @@
 .consultation {
-    min-height: 680px;
-    padding: 90px 0 92px 0;
-    background: url(../img/bg2.png) center (center / cover) no-repeat;
+	min-height: 680px;
+	padding: 90px 0 92px 0;
+	background: url(../img/bg2.png) center (center / cover) no-repeat;
 
-    &__descr {
-        margin-top: 72px;
-        font-size: 20px;
-        line-height: 1.2;
-        font-weight: 500;
-        color: #ffffff;
-    }
+	&__descr {
+		margin-top: 72px;
+		font-size: 20px;
+		line-height: 1.2;
+		font-weight: 500;
+		color: #ffffff;
+	}
 
-    .error {
+	.error {
 		border: 1px solid red;
 	}
 
 	label.error {
 		border: none;
-        text-align: center;
-        color: #fff;
-        margin-bottom: 15px;
-        font-size: 13px;
+		text-align: center;
+		color: #fff;
+		margin-bottom: 15px;
+		font-size: 13px;
 	}
 }

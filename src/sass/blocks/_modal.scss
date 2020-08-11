@@ -51,7 +51,9 @@
 	}
 
 	&_mini {
-		line-height: 16px;
+		.modal__descr {
+			line-height: 16px;
+		}
 	}
 
 	.error {
