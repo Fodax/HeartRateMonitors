@@ -58,6 +58,8 @@ window.addEventListener('DOMContentLoaded', () => {
 			});
 		});
 	
+		//Form
+
 		function validateForms(form) {
 			$(form).validate({
 				rules: {
@@ -87,12 +89,15 @@ window.addEventListener('DOMContentLoaded', () => {
 	
 		$('form').submit(function(e) {
 			e.preventDefault();
-			$(this).find("input").val("");
-			$('#consultation, #order').fadeOut('slow');
-			$('.overlay, #thanks').fadeIn('slow');
-	
-			$('form').trigger('reset');
-	
+			
+			if ($(this).valid()) {
+				$(this).find("input").val("");
+				$('#consultation, #order').fadeOut('slow');
+				$('.overlay, #thanks').fadeIn('slow');
+				
+				$('form').trigger('reset');
+			}
+
 			return false;
 		});
 	
